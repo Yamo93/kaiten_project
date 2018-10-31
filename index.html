@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kaiten Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="front-page">
+        <nav class="topnav">
+            <h2 class="topnav__logoname">Kaiten</h2>
+
+            <ul class="topnav__menu">
+                <li class="topnav__item">Main</li>
+                <li class="topnav__item active">Kanban</li>
+                <li class="topnav__item">Pricing</li>
+                <li class="topnav__item">Login</li>
+                <li class="topnav__item">Sign Up</li>
+            </ul>
+            <i class="fas fa-align-justify hamburger" onclick="openMenu()"></i>
+            <ul class="dropdown_menu" id="slide">
+                <li class="close" onclick="closeMenu()">&times;</li>
+                <li class="dropdown_menu-item">Main</li>
+                <li class="dropdown_menu-item">Kanban</li>
+                <li class="dropdown_menu-item">Pricing</li>
+                <li class="dropdown_menu-item">Login</li>
+                <li class="dropdown_menu-item">Sign Up</li>
+            </ul>
+        </nav>
+
+        <div class="front-sec">
+        <svg class="icon-arrow">
+            <use xlink:href="symbol-defs.svg#icon-arrow-down"></use>
+        </svg>
+        <h1 class="front-slogan">Reveal the path to business agility with Kanban method</h1>
+
+        <a href="#" class="front-btn">Get started for free</a>
+        
+
+
+        <svg class="icon-dots">
+            <use xlink:href="symbol-defs.svg#icon-flickr"></use>
+        </svg>
+        <a href="#" class="front-link">Find out more</a>
+    </div>
+    </section>
+
+    <section class="boxes">
+        <h1 class="boxes__heading">Flexible boards</h1>
+
+        <div class="boxes__info">
+            <div class="boxes__box">
+                <svg class="icon-box">
+                    <use xlink:href="symbol-defs.svg#icon-equalizer2"></use>
+                </svg>
+                <h3 class="boxes__box-head">Process creation on the fly</h3>
+                <p class="boxes__box-para">Kaiten Summary Board helps decompose tasks and create different flows (business, technical, etc.)</p>
+            </div>
+            <div class="boxes__box">
+                <svg class="icon-box">
+                    <use xlink:href="symbol-defs.svg#icon-wrench"></use>
+                </svg>
+                <h3 class="boxes__box-head">Board settings on the go</h3>
+                <p class="boxes__box-para">You can link tasks together - divide big tasks or just telling what tasks are related</p>
+            </div>
+            <div class="boxes__box">
+                <svg class="icon-box">
+                    <use xlink:href="symbol-defs.svg#icon-cog"></use>
+                </svg>
+                <h3 class="boxes__box-head">One board - many spaces</h3>
+                <p class="boxes__box-para">When all subtasks are ready, the parent task moves to the last column of the summary board</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="reports">
+        <h1 class="boxes__heading">Reports and charts</h1>
+        <p class="reports__para">Kaiten provides various charts and reports for <span>deep analysis</span> of your workflows</p>
+
+        <div class="reports__charts">
+            <div class="reports__charts-box">
+                <h2>Cumulative flow diagram</h2>
+                <p>This chart also known as "workflow pulse". The chart shows you how many cards you have on each stage of your process.</p>
+                <div class="reports__charts-box--area"></div>
+            </div>
+            <div class="reports__charts-box">
+                <h2>Control chart</h2>
+                <p>Control (run) chart gives information about how many cards concentrated in a target SLA (lead time).</p>
+                <div class="reports__charts-box--area"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <a href="#" class="front-btn">Get started for free</a>
+
+        <p class="footer__light-para">Visualize your process in minutes.</p>
+        <p class="footer__dark-para">Our team is here to help.</p>
+
+        <a href="#" class="footer-link">See how Kaiten works</a>
+
+        <div class="bottom-nav">
+            <p class="copyright">&copy; Kanban powered visual management system.</p>
+
+            <ul class="right-menu">
+                <li class="right-menu__item">API</li>
+                <li class="right-menu__item">Privacy policy</li>
+                <li class="right-menu__item">Personal <datagrid></datagrid></li>
+                <li class="right-menu__item">Terms of use</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+
+        function openMenu() {
+            document.getElementById("slide").style.display = "block";
+        }
+
+        function closeMenu() {
+            document.getElementById("slide").style.display = "none";
+        }
+    </script>
+</body>
+</html>
